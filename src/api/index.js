@@ -29,3 +29,20 @@ export const updateFeatureFlags = async (featureFlags) => {
     return [];
   }
 };
+
+export const createFeatureFlag = async (newFlagData) => {
+  const {
+    data: { data },
+  } = await api.createFeatureFlagRequest(newFlagData);
+  return data;
+};
+
+export const deleteFeatureFlag = async (id) => {
+  try {
+    await api.deleteFeatureFlagRequest(id);
+    return id;
+  } catch (error) {
+    console.error("Failed to delete featureFlag:", error);
+    throw error;
+  }
+};
