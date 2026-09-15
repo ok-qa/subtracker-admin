@@ -7,5 +7,11 @@ export const featureFlagsRequests = () => {
 
     updateFeatureFlagsRequest: (data) =>
       axiosInstance.request({ method: "PATCH", url: "/feature-flags", data }),
+
+    createFeatureFlagRequest: (data) =>
+      axiosInstance.request({ method: "POST", url: "/feature-flags", data }),
+
+    deleteFeatureFlagRequest: (id) =>
+      axiosInstance.request({ method: "DELETE", url: `/feature-flags/${id}` }),
   };
 };
