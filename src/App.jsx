@@ -1,10 +1,10 @@
 import "./App.css";
-import FeatureFlags from "./pages/FeatureFlags";
+import FeatureFlagsPage from "./pages/FeatureFlagsPage/FeatureFlagsPage";
 
 function App() {
   return (
     <>
-      <FeatureFlags />
+      <FeatureFlagsPage />
     </>
   );
 }
