@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { getFeatureFlags } from "../../api";
 import EditFeatureFlags from "../../components/EditFeatureFlag/EditFeatureFlags";
@@ -40,6 +40,7 @@ const FeatureFlagsPage = () => {
           setFeatureFlags={setFeatureFlags}
           fetchFeatureFlags={fetchFeatureFlags}
         />
+        <Divider orientation="vertical" flexItem />
 
         <AddFeatureFlag
           featureFlags={featureFlags}
