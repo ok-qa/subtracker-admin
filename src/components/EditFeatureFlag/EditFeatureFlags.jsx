@@ -85,10 +85,7 @@ const EditFeatureFlags = ({
           width: "100%",
           maxWidth: 500,
           p: 4,
-          borderTop: 0,
-          borderLeft: 0,
-          borderBottom: 0,
-          borderRadius: 0,
+          border: 0,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
         }}
       >
         <Typography variant="h5" sx={{ mb: 2 }}>
